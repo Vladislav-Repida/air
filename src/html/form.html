@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="form-wraper">
+        <form action="" class="custom-form-flights">
+
+            <div class="header-form">
+                <div class="item-header-form">
+                    <span class="settings">Trip Type</span>
+                    <ul class="drop-menu">
+                        <li data-value="round-trip" class="active">Round Trip</li>
+                        <li data-value="one-trip">One trip</li>
+                    </ul>
+                    <input type="text" value="" name="trip" class="trip hidden">
+                </div>
+                <div class="item-header-form">
+                    <span class="settings">Flight Type</span>
+                    <ul class="drop-menu">
+                        <li data-value="economy" class="active">Economy</li>
+                        <li data-value="business">Business</li>
+                    </ul>
+                    <input type="text" value="" name="flight-type" class="flight-type hidden">
+                </div>
+            </div>
+
+            <div class="form-content">
+                <div class="select-wraper-location">
+                    <div class="select-location block-in-dates">
+                        <span class="title light-style">From</span>
+                        <h3 class="location bold-style"></h3>
+                        <span class="full-location light-style"></span>
+                    </div>
+                    <ul class="drop-menu">
+                        <li>
+                            <h3 class="location bold-style">3Mia</h3>
+                            <span class="full-location light-style">3Miami Intl,Miami</span>
+                        </li>
+                        <li>
+                            <h3 class="location bold-style">4Mia</h3>
+                            <span class="full-location light-style">4Miami Intl,Miami</span>
+                        </li>
+                    </ul>
+                    <input type="text" value="" name="from" class="from-input hidden">
+                </div>
+
+                <div class="btn-revers"></div>
+
+                <div class="select-wraper-location">
+                    <div class="select-location block-in-dates">
+                        <span class="title light-style">To</span>
+                        <h3 class="location bold-style"></h3>
+                        <span class="full-location light-style"></span>
+                    </div>
+                    <ul class="drop-menu">
+                        <li>
+                            <h3 class="location bold-style">1Mia</h3>
+                            <span class="full-location light-style">1Miami Intl,Miami</span>
+                        </li>
+                        <li>
+                            <h3 class="location bold-style">2Mia</h3>
+                            <span class="full-location light-style">2Miami Intl,Miami</span>
+                        </li>
+                    </ul>
+                    <input type="text" value="" name="to" class="to-input hidden">
+                </div>
+
+                <div class="dates">
+                    <div class="departure block-date">
+                        <span class="title light-style">Departure</span>
+                        <div class="wraper-date">
+                            <h3 class="date date-departure bold-style">Fri 15 Oct</h3>
+                            <input type="text" value="" name="departure" class="departure-input hidden">
+                        </div>
+                        <div class="buttons">
+                            <span class="prev-btn-departure date-btn light-style">Prev</span>
+                            <span class="next-btn-departure date-btn light-style">Next</span>
+                        </div>
+                    </div>
+
+                    <div class="return block-date">
+                        <span class="title light-style">Return</span>
+                        <div class="wraper-date">
+                            <h3 class="date date-return bold-style">Tue 19 Oct</h3>
+                            <input type="text" value="" name="return" class="return-input hidden">
+                        </div>
+                        <div class="buttons">
+                            <span class="prev-btn-return date-btn light-style">Prev</span>
+                            <span class="next-btn-return date-btn light-style">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="link-requirements">Add Requirements</a>
+            <button class="send-form-btn">Book Flights</button>
+        </form>
+    </div>
+</div>

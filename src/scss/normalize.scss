@@ -1,0 +1,74 @@
+@function calcPX($f-min, $f-max, $v-min, $v-max) {
+    $k: ($f-max - $f-min)/($v-max - $v-min);
+    $b: $f-min - $k * $v-min;
+  
+    $b: $b * 1px;
+  
+    @return calc( #{$k} * 100vw + #{$b} );
+}
+
+:root{
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --font-size: 16px;
+    --font-weigth-standart: 500;
+
+    /* Colors */
+    --black: #000;
+    --dark-light: #181818;
+    --dark: #151515;
+    --gray: #737373;
+    --ligth-gray: #F5F5F5;
+
+    --violet: #656293;
+    --light-blue: #E5F4F6;
+
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html{   
+    font-size: var(--font-size);
+}
+body{
+    margin: 0;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weigth-standart);
+    color: var(--dark-light);
+}
+body.no-scroll{
+    overflow: hidden;
+}
+p{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+button{
+    font-family: var(--font-poppins);
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media (max-width: 1110px) {
+    .container{
+        width: 100vw;
+    }
+}
